@@ -19,7 +19,7 @@ class ex7Spec extends FunSuite with MustMatchers with BeforeAndAfter {
 
   test("test rdd function") {
     val test_rdd = ex5.readFile(getClass.getResource("/mobydick/2701-0.txt").getPath)
-    ex7.getWordcount(test_rdd).sortBy(_._2, false).take(1).head._1 must be("the")
+    ex7.getWordcount(test_rdd).sortBy(_._2, false).first._1 must be("the")
   }
 
   after {
