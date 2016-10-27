@@ -20,5 +20,6 @@ libraryDependencies ++= excludeJavaxServlet(Seq(
 "org.scalatest" % "scalatest_2.11" % "2.2.4" % "test",
 "org.apache.hadoop" % "hadoop-minicluster" % "2.7.1",
 "org.apache.hadoop" % "hadoop-common" % "2.7.1" % "compile,test" classifier "" classifier "tests" excludeAll ExclusionRule(organization = "javax.servlet"),
+"org.apache.hadoop" % "hadoop-client" % "2.7.1" % "compile,test" classifier "" classifier "tests" excludeAll ExclusionRule(organization = "javax.servlet"),
 "org.apache.hadoop" % "hadoop-hdfs" % "2.7.1" % "compile,test" classifier "" classifier "tests"
 ))
