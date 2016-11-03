@@ -24,7 +24,7 @@ class ex9Spec extends FunSuite with MustMatchers with BeforeAndAfter {
     val accum = common.sc.accumulator[Long](0, "test")
     val test_array = Array("ahab", "ishmael", "queequeg", "pip", "moby")
     val bc_test_array = ex9.broadcastArray(Array("ishmael", "queequeg", "pip", "moby"))
-    val result = ex8.getWordcount(rdd, ex9.filterInArray(bc_test_array, Option(accum)), 2)
+    val result = ex8.getTopWords(rdd, ex9.filterInArray(bc_test_array, Option(accum)), 2)
     result must be(Array("queequeg", "moby"))
     accum.value must be(437226)
   }

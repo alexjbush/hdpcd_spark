@@ -14,7 +14,7 @@ import hdpcd_spark.getting_started
 object ex8 {
 
   // 1. Use filter and sortby to get the top n words that match the filter
-  def getWordcount(rdd: RDD[(String, Int)], filter: ((String, Int)) => Boolean, hits: Int = 5): Array[String] = {
+  def getTopWords(rdd: RDD[(String, Int)], filter: ((String, Int)) => Boolean, hits: Int = 5): Array[String] = {
     rdd.filter(filter).sortBy(_._2, false).take(hits).map(_._1)
   }
 
