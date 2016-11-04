@@ -16,6 +16,7 @@ def excludeJavaxServlet(items: Seq[ModuleID]) =
 
 libraryDependencies ++= excludeJavaxServlet(Seq(
 "org.apache.spark" %% "spark-core" % "1.6.2",
+"org.apache.spark" %% "spark-hive" % "1.6.2",
 "org.apache.spark" % "spark-sql_2.11" % "1.6.2",
 "org.scalatest" % "scalatest_2.11" % "2.2.4" % "test",
 "org.apache.hadoop" % "hadoop-minicluster" % "2.7.1",

@@ -12,7 +12,7 @@ class ex12Spec extends FunSuite with MustMatchers with BeforeAndAfter {
 
   before {
     // Set up the spark context
-    common.init(new SparkConf().setAppName("ex9").setMaster("local[*]"))
+    common.init(new SparkConf().setAppName("ex12").setMaster("local[*]"))
   }
 
 
