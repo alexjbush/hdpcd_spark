@@ -12,10 +12,10 @@ import org.apache.spark.sql.types.{ StructType, StructField, StringType, Integer
 import org.apache.spark.sql._
 
 /**
- * Exercise 9: Create and use broadcast variables and accumulators
- * http://spark.apache.org/docs/latest/programming-guide.html#shared-variables
+ * Exercise 10: Create Spark DataFrames from an existing RDD
+ * http://spark.apache.org/docs/1.6.2/sql-programming-guide.html#creating-dataframes
  *
- * Use broadcast variables and accumulators
+ * Create Dataframes from an existing RDD and from a JSON file
  */
 object ex10 {
 
